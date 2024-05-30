@@ -37,6 +37,10 @@ const userSchema = new mongoose.Schema(
     profilePic: {
       type: String,
     },
+    answer: {
+      type: String,
+      required: [true, "answer is required"],
+    },
   },
   { timestamps: true }
 );
